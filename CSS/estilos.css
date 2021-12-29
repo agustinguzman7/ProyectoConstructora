@@ -320,6 +320,9 @@ html{
     font-family: Arial;
     font-size: 2rem;
 }
+.carousel{
+    width: 100%;
+}
 
 /*article nuestro equipo*/
 .section__NuestroEquipo{
