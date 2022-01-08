@@ -8,9 +8,8 @@ html{
 }
 .body{
     background-color: rgb(185, 177, 164);
-    background-image: url(../IMAGES/construccion.jpg);
-    background-size: 100%;
-    background-repeat: no-repeat;
+    
+    
     
     
 }
@@ -84,6 +83,9 @@ html{
 .primera__section{
     grid-column: 1/7 ;
     grid-row: 1/2;
+    background-image: url(../IMAGES/construccion.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
 }
 
 
