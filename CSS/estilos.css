@@ -7,11 +7,7 @@ html{
     font-size: 62.5%;
 }
 .body{
-    background-color: rgb(185, 177, 164);
-    
-    
-    
-    
+    background-color: rgb(185, 177, 164); 
 }
  
 .contenedor{
@@ -21,7 +17,7 @@ html{
 
 .header{
     display: flex;
-    
+    background-color: white;
     justify-content: space-between;
     align-items: center;
 }
@@ -75,14 +71,13 @@ html{
 }
 
 .main{
-    display: grid;
-    grid-template-columns: repeat(6, 16.6%);
-    grid-template-rows: repeat(4, auto);
+    display: flex;
+    flex-direction: column;
+    
 }
+
 /*grid*/
 .primera__section{
-    grid-column: 1/7 ;
-    grid-row: 1/2;
     background-image: url(../IMAGES/construccion.jpg);
     background-size: 100%;
     background-repeat: no-repeat;
@@ -92,12 +87,15 @@ html{
 
  .main__titulo{
      
-     background-color: #4d545b85;
+     background-color: rgba(255, 255, 255, 0.7);
      text-align: center;
      padding: 25px;
      font-family: Arial;
      margin-top: 250px;
      margin-bottom: 200px;
+     margin-left: 20%;
+     margin-right: 20%;
+     border-radius: 10px;
  }
 .titulos__superior{
     font-family: helvetica;
@@ -112,9 +110,7 @@ html{
 
 /*grid*/
 .segunda__section{
-    grid-column: 1/7;
-    grid-row: 2/3;
-    
+       
     align-items: center;
 }
 
@@ -136,8 +132,6 @@ html{
     font-size: 4rem;
     text-decoration: underline;
     color:thistle;
-    
-    
 }
 
 .article__parr{
@@ -238,7 +232,7 @@ html{
 /*article sobre nosotros*/
 
 .article__fotosNS{
-    height: 500px;
+    height: auto;
     width: 100%;
     padding: 10px 100px 10px 100px;
     font-family: Arial;
@@ -410,12 +404,13 @@ html{
     }
     .article__interior{
         padding: 10px;
+        
     }
     .article__title{
-        font-size: 250%;
+        font-size: 200%;
     }
     .article__parr{
-        font-size: 150%;
+        font-size: 100%;
     }
     .article__descrip{
         height: 250px;
@@ -452,8 +447,15 @@ html{
         gap:10px;
     }
     /*nuestros servicios*/
+    .article__descrip{
+        height: auto;
+    }
+    .article__interior{
+        max-height: 150%;
+    }
     .article__parrSN{
-        font-size: 1rem;
+        
+        font-size: 100%;
     }
     .article__imagenes--2{
         width: 100%;
