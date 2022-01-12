@@ -1,0 +1,28 @@
+.body{
+    background-color: rgb(185, 177, 164); 
+    
+   .contenedor{
+       max-width: 1920px;
+       margin: auto;
+       .header{
+           display: flex;
+           background-color: white;
+           justify-content: space-between;
+           align-items: center;
+           
+           &__logo{
+               display: flex;
+               margin: 10px;
+               transition: width 2s;
+               &:hover{
+                   width: 30%;
+                }
+            }
+            &__logo{
+                position: relative;
+                width: 20%;
+                
+            }
+        }
+    } 
+}

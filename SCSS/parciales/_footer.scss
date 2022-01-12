@@ -1,0 +1,31 @@
+.footer{
+    
+    background: $gradient;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 100px;
+    
+    &__section--sup{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        
+        .footer__img{
+            padding: 10%;
+        }
+    }
+    
+    
+    &__section-inf{
+        font-size: $textos;
+        
+        .footer__desc{
+            font-family: Arial;
+            color: thistle;
+        }
+    }
+    
+}

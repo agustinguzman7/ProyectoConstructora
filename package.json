@@ -1,0 +1,25 @@
+{
+  "name": "carpeta-proyecto",
+  "version": "1.0.0",
+  "description": "paquete proyecto",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css":"node-sass --include-path scss SCSS/main.scss CSS/main.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/agustinguzman7/ProyectoConstructora.git"
+  },
+  "author": "Agustin Guzman",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/agustinguzman7/ProyectoConstructora/issues"
+  },
+  "homepage": "https://github.com/agustinguzman7/ProyectoConstructora#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.15"
+  }
+}
