@@ -384,7 +384,7 @@ html{
         grid-row: 2/3;
         height: 30px;
         width:max-content
-        border-radius: 0px;
+        
     }
     .header__item{
         font-size: 0.8rem;

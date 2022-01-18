@@ -19,7 +19,7 @@
             border-radius: 10px;
             .titulos__superior{
                 font-family: helvetica;
-                font-size: $titulo;
+                font-size:$titulo;
                 font-weight: bold;
                 color:rgb(44, 44, 44)    
             }
@@ -80,7 +80,19 @@
                 }
             }
         }
+        .article__fotosNS{
+            height: auto;
+            width: 100%;
+            padding: 10px 100px 10px 100px;
+            font-family: Arial;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            
+        }
     }
+    
     .cuarta__section{
         grid-column: 1/7;
         grid-row: 4/5;

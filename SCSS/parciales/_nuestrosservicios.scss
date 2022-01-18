@@ -1,0 +1,28 @@
+
+.article__parrSN{
+    font-size: $textos;
+    color:thistle;
+}
+
+.article__fotosNS{
+
+    height: auto;
+    width: 100%;
+    padding: 10px 100px 10px 100px;
+    font-family: Arial;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    
+    .main__list{
+        font-size: 1.3rem;
+        font-family: Arial;
+        padding-top: 10px;
+        list-style: none;
+        font-weight: bolder;
+    }
+}
+
+
+

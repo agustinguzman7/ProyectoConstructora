@@ -1,4 +1,11 @@
-$titulo: 6rem;
-$SubTitulo: 3rem;
-$textos: 2rem;
+$text: (
+    h1: 6rem,
+    h2: 4rem,
+    h3: 3rem,
+    h4: 2rem,
+);
+
+$titulo: map-get($text, h1);
+$SubTitulo: map-get($text, h3);
+$textos: map-get($text, h4);
 $gradient: linear-gradient(to right, #dd1818, #333333);
