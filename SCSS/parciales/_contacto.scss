@@ -1,0 +1,30 @@
+.section__contacto{
+    font-family: Arial;
+    background-color: rgb(185, 177, 164);
+    align-items: center;
+    grid-column: 1/7;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 50px;
+    padding: 25px;
+    .div__contacto{
+        background-color: rgb(255, 255, 255);
+        padding: 15px;
+        .legend{
+            
+            font-size: $textos;
+            .fieldset{
+                background-color: rgb(255, 255, 255);
+                
+            }
+            .formulario{
+                padding: 50px 80px 50px 80px;
+            }
+        }
+    }   
+}
+.mapa{
+    background-color: rgb(255, 255, 255);
+    padding: 5px;
+}

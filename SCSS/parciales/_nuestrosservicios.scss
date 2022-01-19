@@ -1,8 +1,5 @@
 
-.article__parrSN{
-    font-size: $textos;
-    color:thistle;
-}
+
 
 .article__fotosNS{
 
@@ -16,7 +13,7 @@
     flex-wrap: wrap;
     
     .main__list{
-        font-size: 1.3rem;
+        font-size: map-get($text, textos);
         font-family: Arial;
         padding-top: 10px;
         list-style: none;

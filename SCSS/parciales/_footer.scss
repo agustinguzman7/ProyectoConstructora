@@ -20,7 +20,7 @@
     
     
     &__section-inf{
-        font-size: $textos;
+        font-size: map-get($text, textos);
         
         .footer__desc{
             font-family: Arial;

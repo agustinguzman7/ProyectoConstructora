@@ -114,15 +114,14 @@ html {
   padding: 50px 50px 50px 50px;
 }
 
-.main .segunda__section .article__descrip .article__interior .article__title {
-  font-size: 4rem;
+.main .segunda__section .article__descrip .article__interior .article__title, .main .segunda__section .article__descrip .article__interior .article__parr, .main .segunda__section .article__descrip .article__interior .article__parrSN {
+  font-size: 2rem;
   text-decoration: underline;
   color: thistle;
 }
 
 .main .segunda__section .article__descrip .article__interior .article__parr {
   font-size: 2rem;
-  color: thistle;
 }
 
 .main .tercera__section {
@@ -172,6 +171,24 @@ html {
   margin-left: auto;
 }
 
+.main .tercera__section .article__fotosNS {
+  height: auto;
+  width: 100%;
+  padding: 10px 100px 10px 100px;
+  font-family: Arial;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
 .main .cuarta__section {
   -ms-grid-column: 1;
   -ms-grid-column-span: 6;
@@ -212,8 +229,8 @@ html {
 }
 
 .footer {
-  background: -webkit-gradient(linear, left top, right top, from(#485563), to(#29323c));
-  background: linear-gradient(to right, #485563, #29323c);
+  background: -webkit-gradient(linear, left top, right top, from(#dd1818), to(#333333));
+  background: linear-gradient(to right, #dd1818, #333333);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -255,5 +272,131 @@ html {
 .footer__section-inf .footer__desc {
   font-family: Arial;
   color: thistle;
+}
+
+.article__fotosNS {
+  height: auto;
+  width: 100%;
+  padding: 10px 100px 10px 100px;
+  font-family: Arial;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.article__fotosNS .main__list {
+  font-size: 2rem;
+  font-family: Arial;
+  padding-top: 10px;
+  list-style: none;
+  font-weight: bolder;
+}
+
+.section__NuestroEquipo {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: (1fr)[3];
+      grid-template-rows: repeat(3, 1fr);
+  background-color: white;
+  font-family: Arial;
+  padding: 50px 10px 50px 10px;
+}
+
+.section__NuestroEquipo .section__tituloNE {
+  font-size: 3rem;
+  padding: 10px;
+}
+
+.section__NuestroEquipo .section__tituloNE .section__listaNE {
+  list-style: inside;
+  font-size: 6rem;
+}
+
+.segunda__section {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.segunda__section .section__imagenesNO {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  -ms-grid-rows: (1fr)[3];
+      grid-template-rows: repeat(3, 1fr);
+  -ms-grid-row-align: center;
+      align-self: center;
+  gap: 5px;
+  padding: 20px;
+  background-color: white;
+  justify-items: center;
+}
+
+.segunda__section .section__imagenesNO .article_div {
+  display: inline-block;
+}
+
+.segunda__section .section__imagenesNO .article_div .article__imagenNO {
+  width: 24vw;
+}
+
+.segunda__section .section__imagenesNO .article_div .article__parr_NO {
+  font-family: Arial;
+  font-size: 3rem;
+  padding: 20px 5px 20px;
+}
+
+.section__contacto {
+  font-family: Arial;
+  background-color: #b9b1a4;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 6;
+  grid-column: 1/7;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 50px;
+  padding: 25px;
+}
+
+.section__contacto .div__contacto {
+  background-color: white;
+  padding: 15px;
+}
+
+.section__contacto .div__contacto .legend {
+  font-size: 2rem;
+}
+
+.section__contacto .div__contacto .legend .fieldset {
+  background-color: white;
+}
+
+.section__contacto .div__contacto .legend .formulario {
+  padding: 50px 80px 50px 80px;
+}
+
+.mapa {
+  background-color: white;
+  padding: 5px;
 }
 /*# sourceMappingURL=main.css.map */

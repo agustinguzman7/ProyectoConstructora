@@ -1,0 +1,26 @@
+.segunda__section{
+       
+    align-items: center;
+    .section__imagenesNO{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        align-self: center;
+        gap: 5px;
+        padding: 20px;
+        background-color: white;
+        justify-items: center;
+        .article_div{
+            display: inline-block;
+            
+            .article__imagenNO{
+                @include imagenobras
+                
+            }
+            .article__parr_NO{
+                @include textoobras
+            
+            }
+        }
+    }
+}

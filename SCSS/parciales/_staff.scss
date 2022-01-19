@@ -1,0 +1,16 @@
+.section__NuestroEquipo{
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    background-color: white;
+    font-family: Arial;
+    padding: 50px 10px 50px 10px;
+
+    .section__tituloNE{
+        font-size: map-get($text, subtitulo);
+        padding: 10px;
+        .section__listaNE{
+            list-style:inside;
+            font-size: map-get($text, titulo);
+        }
+    }
+}
