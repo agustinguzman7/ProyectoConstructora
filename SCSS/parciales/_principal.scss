@@ -3,7 +3,6 @@
 .main{
     display: flex;
     flex-direction: column;
-    
     .primera__section{
         background-image: url(../IMAGES/construccion.jpg);
         background-size: 100%;
@@ -19,18 +18,32 @@
             margin-left: 20%;
             margin-right: 20%;
             border-radius: 10px;
+            @media (max-width: 480px){
+                margin-top: 10%;
+                margin-bottom: 10%;
+            }
             .titulos__superior{
                 font-family: helvetica;
                 font-size: map-get($text, titulo);
                 font-weight: bold;
-                color:rgb(44, 44, 44)    
+                color:rgb(44, 44, 44);
+                @media (max-width: 480px) {
+                    font-size: 250%;  
+                }
+                    
+                }
+                    
             }
             .titulos__subtitulo{
                 font-size: map-get($text, subtitulo);
                 font-family: Arial;
+                @media (max-width: 480px) {
+                    font-size: 80%;
+                }
             }
         }
-    }
+        
+    
     .segunda__section{  
         align-items: center;
         .article__descrip{
@@ -40,22 +53,39 @@
             font-family: Arial;
             display:flex;
             align-items: center;
+            @media (max-width: 480px){
+               height: 350px; 
+            }
+            
             .article__interior{
                 border: solid 5px whitesmoke;
                 padding: 50px 50px 50px 50px;
+                @media (max-width: 480px){
+                    padding: 10px;
+                }
                 .article__title{
                     font-size: map-get($text, textos);
                     text-decoration: underline;
                     color:thistle;
+                    @media (max-width: 480px){
+                        font-size: 200%;
+                    }
                 }
                 .article__parr{
                     @extend .article__title;
                     font-size: $textos;
+                    @media (max-width: 480px){
+                        font-size: 100%;
+                    }
                     
                 }
                 .article__parrSN{
-                    @extend .article__title;
-                }
+                    font-size: 2rem;
+                    color:thistle;   
+                    @media (max-width: 480px){
+                        font-size: 100%;
+                    }
+                }             
             }
         }
     }
@@ -75,6 +105,10 @@
             justify-content: space-around;
             flex-wrap: wrap;
             background: linear-gradient(to right, #485563, #29323c);
+            @media (max-width: 480px){
+                height: 800px;
+                padding: 10px;
+            }
             .article__imagenes{
                 height: auto;
                 display: inline-block;
@@ -85,6 +119,10 @@
                     margin: 10px;
                     margin-right: auto;
                     margin-left: auto;
+                    @media (max-width: 480px){
+                        width: 80%;
+                        height: 30%;
+                    }
                 }
             }
         }
@@ -108,6 +146,10 @@
         display: grid;
         grid-template-columns: 50% 50%;
         height: auto;
+        @media (max-width: 480px){
+            grid-template-rows: repeat(2, 1fr);
+            justify-items: center;
+        }
         .section__inf{
             display: flex;
             flex-direction: row;
@@ -118,12 +160,23 @@
             margin: 30px;
             padding: 15px;
             width: 100%;
+            @media (max-width: 480px){
+                grid-column: 1/3;
+                grid-row: 1/2;
+                margin: 5px;
+                padding: 5px;
+                width: 90%;
+            }
         }
         
         .section__parrafo{
             margin: 60px 30px 30px 30px;
             font-size: $textos;
             font-family: Arial;
+            @media (max-width: 480px){
+                grid-column: 1/3;
+                grid-row: 2/3;
+            }
         
         }
     }

@@ -10,11 +10,20 @@
         padding: 20px;
         background-color: white;
         justify-items: center;
+        @media (max-width: 480px){
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(9, 1fr);
+            align-content: stretch;
+        }
         .article_div{
             display: inline-block;
             
             .article__imagenNO{
                 @include imagenobras
+                @media (max-width: 480px){
+                    width: 100%;
+                    padding: 5%;
+                }
                 
             }
             .article__parr_NO{
@@ -24,3 +33,4 @@
         }
     }
 }
+

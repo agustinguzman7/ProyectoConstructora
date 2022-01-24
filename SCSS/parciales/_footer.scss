@@ -7,6 +7,9 @@
     flex-wrap: wrap;
     align-items: center;
     gap: 100px;
+    @media (max-width: 480px){
+        gap:10px
+    }
     
     &__section--sup{
         display: flex;
@@ -21,6 +24,9 @@
     
     &__section-inf{
         font-size: map-get($text, textos);
+        @media (max-width: 480px){
+            font-size: 100%;
+        }
         
         .footer__desc{
             font-family: Arial;
@@ -29,3 +35,5 @@
     }
     
 }
+
+
