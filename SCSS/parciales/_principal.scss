@@ -4,42 +4,36 @@
     display: flex;
     flex-direction: column;
     .primera__section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         background-image: url(../IMAGES/construccion.jpg);
-        background-size: 100%;
-        background-repeat: no-repeat;
+        height: min-content;
+        
+        
         .main__titulo{
             
             background-color: rgba(255, 255, 255, 0.7);
             text-align: center;
             padding: 25px;
             font-family: Arial;
-            margin-top: 250px;
-            margin-bottom: 200px;
-            margin-left: 20%;
-            margin-right: 20%;
             border-radius: 10px;
-            @media (max-width: 480px){
-                margin-top: 10%;
-                margin-bottom: 10%;
-            }
+            
             .titulos__superior{
                 font-family: helvetica;
                 font-size: map-get($text, titulo);
                 font-weight: bold;
                 color:rgb(44, 44, 44);
-                @media (max-width: 480px) {
-                    font-size: 250%;  
-                }
-                    
+                
+                
+                                    
                 }
                     
             }
             .titulos__subtitulo{
                 font-size: map-get($text, subtitulo);
                 font-family: Arial;
-                @media (max-width: 480px) {
-                    font-size: 80%;
-                }
+               
             }
         }
         
@@ -48,14 +42,12 @@
         align-items: center;
         .article__descrip{
             background: $gradient;
-            height: 450px;
-            padding: 50px;
+            height: auto;
+            padding: 5vw;
             font-family: Arial;
             display:flex;
             align-items: center;
-            @media (max-width: 480px){
-               height: 350px; 
-            }
+            
             
             .article__interior{
                 border: solid 5px whitesmoke;
@@ -64,27 +56,21 @@
                     padding: 10px;
                 }
                 .article__title{
-                    font-size: map-get($text, textos);
+                    font-size: map-get($text, subtitulo);
                     text-decoration: underline;
                     color:thistle;
-                    @media (max-width: 480px){
-                        font-size: 200%;
-                    }
+                    
                 }
                 .article__parr{
                     @extend .article__title;
                     font-size: $textos;
-                    @media (max-width: 480px){
-                        font-size: 100%;
-                    }
+                    
                     
                 }
                 .article__parrSN{
-                    font-size: 2rem;
+                    font-size: $textos;
                     color:thistle;   
-                    @media (max-width: 480px){
-                        font-size: 100%;
-                    }
+                    
                 }             
             }
         }
