@@ -23,6 +23,7 @@
     
     
     &__section-inf{
+        text-align: center;
         font-size: map-get($text, textos);
         @media (max-width: 480px){
             font-size: 100%;

@@ -1,79 +1,11 @@
-.main{
-    display: flex;
-    flex-direction: column;
-    .primera__section{
-        background-image: url(../IMAGES/construccion.jpg);
-        background-size: 100%;
-        background-repeat: no-repeat;
-        .main__titulo{
-            
-            background-color: rgba(255, 255, 255, 0.7);
-            text-align: center;
-            padding: 25px;
-            font-family: Arial;
-            margin-top: 250px;
-            margin-bottom: 200px;
-            margin-left: 20%;
-            margin-right: 20%;
-            border-radius: 10px;
-            @media (max-width: 480px){
-                margin-top: 10%;
-                margin-bottom: 10%;
-            }
-            .titulos__superior{
-                font-family: helvetica;
-                font-size: map-get($text, titulo);
-                font-weight: bold;
-                color:rgb(44, 44, 44);
-                @media (max-width: 480px) {
-                    font-size: 250%;  
-                }
-                    
-                }
-                    
-            }
-            .titulos__subtitulo{
-                font-size: map-get($text, subtitulo);
-                font-family: Arial;
-                @media (max-width: 480px) {
-                    font-size: 80%;
-                }
-            }
-        }
-        
-    
-    
-    }
-    .segunda__section{  
-        align-items: center;
-        .article__interior{
-            border: solid 5px whitesmoke;
-            padding: 50px 50px 50px 50px;
-            @media (max-width: 480px){
-                padding: 10px;
-            }
 
-            .article__descrip{
-                background: $gradient;
-                height: 450px;
-                padding: 50px;
-                font-family: Arial;
-                display:flex;
-                align-items: center;
-                @media (max-width: 480px){
-                   height: 250px; 
-                }
-                
+
                 .article__parrSN{
                     font-size: 2rem;
                     color:thistle;
-                    @media (max-width: 480px){
-                        font-size: 10%;
-                    } 
+
                 }
-            }
-        }
-    }
+    
     
     .article__fotosNS{
         
@@ -97,5 +29,5 @@
             font-weight: bolder;
         }
     }
-    
+
     
